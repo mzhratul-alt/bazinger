@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Default CSS Start */
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: safe;
+        -ms-flex-pack: safe;
+            justify-content: safe;
+}
+
+.secInfo {
+    text-align: center;
+    width: 100%;
+}
+
+.secInfo h2 {
+    font-size: 36px;
+    font-weight: 900;
+    color: #414042;
+    text-transform: lowercase;
+}
+
+.secInfo p {
+    font-size: 20px;
+    font-weight: 300;
+    color: #414042;
+}
+
+/* Default CSS End */
+
+/* Nav Section CSS Start */
+#nav {
+    background-color: #131e29;
+    border-bottom: 2px solid #182738;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
+#nav .logo {
+    width: 300px;
+}
+
+#nav .logo a {
+    display: inline-block;
+    padding: 21px 0;
+}
+
+#nav .menu {
+    width: calc(100% - 300px);
+}
+
+#nav .menu ul {
+    float: right;
+}
+
+#nav .menu ul li {
+    display: inline-block;
+}
+
+#nav .menu ul li a {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 41px 18px;
+    -o-transition: linear .3s;
+    transition: linear .3s;
+    -webkit-transition: linear .3s;
+}
+
+#nav .menu ul li:hover a {
+    color: #4bcaff;
+}
+
+/* /Nav Section CSS End */
+
+/* Banner Section CSS Start */
+#banner {
+    background-image: url('../images/bannerBg.jpg');
+    background-size: cover;
+    background-position: center;
+    border-bottom: 4px solid #4bcaff;
+    position: relative;
+}
+
+#banner .bannerImg {
+    width: 40%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+#banner .bannerImg img {
+    width: 100%;
+    display: block;
+}
+
+#banner .bannerContent {
+    width: 60%;
+    margin-left: auto;
+    padding: 245px 0 115px 30px;
+}
+
+#banner .bannerContent h2 {
+    font-size: 48px;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+#banner .bannerContent h2 span {
+    font-weight: 700;
+}
+
+#banner .bannerContent p {
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    text-align: justify;
+}
+
+#banner .bannerContent .bannerBtn {
+    margin: 45px 0;
+}
+
+#banner .bannerContent .bannerBtn a {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    padding: 23px 50px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    margin-right: 39px;
+    -o-transition: all linear .3s;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+}
+
+#banner .bannerContent .bannerBtn a:hover {
+    border: none;
+    background-color: #4bcaff;
+    border: 2px solid #4bcaff;
+    -webkit-box-shadow: 0px 3px 0px 0px rgba(39, 118, 151, 1);
+    box-shadow: 0px 3px 0px 0px rgba(39, 118, 151, 1);
+}
+
+#banner .bannerContent .appBtn p {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    margin-right: 10px;
+}
+
+#banner .bannerContent .appBtn a {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+    text-align: center;
+    line-height: 60px;
+    color: #4bcaff;
+    border-radius: 50%;
+    background-color: #191c22;
+    margin-right: 15px;
+}
+
+/* /Banner Section CSS End */
+
+
+/* Feature Section CSS Start */
+#feature {
+    margin: 45px 0;
+}
+
+#feature .featureItem {
+    width: 25%;
+    text-align: center;
+}
+
+/* /Feature Section CSS End */
+
+
+/* Contact Section CSS Start */
+#contact {
+    position: relative;
+    width: 100%;
+    height: 685px;
+}
+
+#contact .map {
+    width: 100%;
+    height: 100%;
+}
+
+#contact .map iframe {
+    border: none;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#contact .contactForm {
+    position: absolute;
+    margin: auto;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    background-color: rgb(75, 202, 255, 0.8);
+    padding: 30px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    width: 25%;
+    border-radius: 10px;
+}
+
+#contact .contactForm h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+#contact .contactForm form input,
+#contact .contactForm form textarea {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    background-color: #fff;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#contact .contactForm form textarea {
+    height: 150px;
+    resize: none;
+}
+
+#contact .contactForm form input[type="submit"] {
+    display: inline-block;
+    width: 80%;
+    background-color: #414042;
+    color: #4bcaff;
+    -webkit-box-shadow: 0 3px 0 0 #313032;
+            box-shadow: 0 3px 0 0 #313032;
+    cursor: pointer;
+}
+
+/* /Contact Section CSS End */
+
+/* Banner Section CSS Start */
+/* /Banner Section CSS End */
+/* Banner Section CSS Start */
+/* /Banner Section CSS End */
+/* Banner Section CSS Start */
+/* /Banner Section CSS End */
+/* Banner Section CSS Start */
+/* /Banner Section CSS End */
+/* Banner Section CSS Start */
+/* /Banner Section CSS End */
+/* Banner Section CSS Start */
+/* /Banner Section CSS End */
+/* Banner Section CSS Start */
+/* /Banner Section CSS End */
