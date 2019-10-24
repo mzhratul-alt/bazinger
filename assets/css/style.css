@@ -3,7 +3,11 @@
     padding: 0;
     outline: 0;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -16,6 +20,7 @@ ul {
 
 a {
     text-decoration: none;
+    display: block;
 }
 
 /* Default CSS Start */
@@ -29,10 +34,10 @@ a {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-pack: safe;
-        -ms-flex-pack: safe;
-            justify-content: safe;
+    -ms-flex-pack: safe;
+    justify-content: safe;
 }
 
 .secInfo {
@@ -200,16 +205,329 @@ a {
 
 /* Feature Section CSS Start */
 #feature {
-    margin: 45px 0;
+    padding: 45px 0;
+    background-color: #f9f9f9;
 }
 
 #feature .featureItem {
     width: 25%;
     text-align: center;
+    padding: 0 25px;
+    margin: 70px 0 50px;
+}
+
+#feature .featureItem span {
+    display: inline-block;
+    width: 165px;
+    height: 165px;
+    border-radius: 50%;
+    background-color: #4bcaff;
+    -webkit-box-shadow: 0 4px 0 0 #efefef;
+    box-shadow: 0 4px 0 0 #efefef;
+}
+
+#feature .featureItem span i {
+    color: #fff;
+    font-size: 70px;
+    line-height: 165px;
+}
+
+#feature .featureItem h3 {
+    color: #414042;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 30px 0;
 }
 
 /* /Feature Section CSS End */
 
+/* Gallery Section CSS Start */
+#gallery {
+    padding: 45px 0;
+}
+
+#gallery .galleryItem {
+    width: calc(25% - 30px);
+    margin: 65px 15px 50px;
+    text-align: center;
+}
+
+#gallery .galleryItem .productThumb {
+    border-radius: 15px;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+
+#gallery .galleryItem .productThumb .productImg {
+    width: 100%;
+    height: 300px;
+    border: 1px solid #4bcaff;
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+}
+
+#gallery .galleryItem .productThumb .productImg img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: scale-down;
+    object-fit: scale-down;
+    -webkit-transition: linear .3s;
+    -o-transition: linear .3s;
+    transition: linear .3s;
+}
+
+#gallery .galleryItem:hover .productThumb .productImg img {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+#gallery .galleryItem .productThumb h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #4bcaff;
+    background-color: #447084;
+    padding: 15px 0;
+}
+
+#gallery .galleryItem .productDes {
+    padding: 0 25px;
+}
+
+#gallery .galleryItem .productDes p {
+    font-size: 13px;
+    line-height: 22px;
+    color: #838383;
+}
+
+/* /Gallery Section CSS End */
+
+/* Video Section CSS Start */
+#video {
+    background-image: url('../images/texture-1.jpg');
+    padding: 80px 0;
+}
+
+#video .title {
+    width: 67%;
+    margin: 0 auto;
+}
+
+#video .title h2 {
+    font-size: 48px;
+    font-weight: 300;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+#video .title h2 span {
+    font-weight: 700;
+}
+
+#video .videoInfo {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#video .videoInfo p {
+    font-size: 18px;
+    color: #fff;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+/* /Video Section CSS End */
+
+/* Price Section CSS Start */
+#price {
+    margin: 70px 0;
+}
+
+#price .priceTable {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#price .priceTable .row {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#price .priceTable .priceBox {
+    width: calc(30% - 30px);
+    height: 100%;
+    margin: 80px 15px 0;
+    text-align: center;
+    background-color: #f9f9f9;
+    border: 1px solid #dad7d7;
+    border-radius: 10px;
+    color: #d7d7d7;
+}
+
+#price .priceTable .priceBox.highlight {
+    width: calc(40% - 30px)
+}
+
+#price .priceTable .priceBox h3 {
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 25px;
+    padding: 0 10px;
+}
+
+#price .priceTable .priceBox.highlight h3 {
+    font-size: 22px;
+    margin: 25px;
+    padding: 0 10px;
+}
+
+#price .priceTable .priceBox p {
+    font-size: 85px;
+    font-weight: 700;
+    color: #fff;
+    margin: 20px 0;
+    padding: 0 10px;
+}
+
+#price .priceTable .priceBox:nth-of-type(3n - 2) p {
+    background-color: #91c46b;
+}
+
+#price .priceTable .priceBox:nth-of-type(3n - 1) p {
+    background-color: #4bcaff;
+}
+
+#price .priceTable .priceBox:nth-of-type(3n) p {
+    background-color: #fd7c00;
+}
+
+#price .priceTable .priceBox p span {
+    font-size: 80px;
+}
+
+#price .priceTable .priceBox ul li {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 24px 0;
+    padding: 0 10px;
+}
+
+#price .priceTable .priceBox a {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    margin: 20px 0;
+    padding: 20px 45px;
+    border-radius: 10px;
+}
+
+#price .priceTable .priceBox.highlight a {
+    padding: 25px 45px;
+}
+
+#price .priceTable .priceBox:nth-of-type(3n - 2) a {
+    background-color: #91c46b;
+}
+
+#price .priceTable .priceBox:nth-of-type(3n - 1) a {
+    background-color: #4bcaff;
+}
+
+#price .priceTable .priceBox:nth-of-type(3n) a {
+    background-color: #fd7c00;
+}
+
+/* /Price Section CSS End */
+
+/* Testimonial Section CSS Start */
+#testimonial {
+    padding: 40px 0;
+    border: 1px solid #dad7d7;
+}
+
+#testimonial .testimonialInfo {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#testimonial .testimonialInfo h2 {
+    font-size: 36px;
+    font-weight: 900;
+    color: #414042;
+    text-align: center;
+}
+
+#testimonial .testimonialInfo .row {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#testimonial .testimonialInfo .testiIcon {
+    width: 200px;
+    margin: 40px 0 60px;
+}
+
+#testimonial .testimonialInfo .testiContent {
+    width: calc(100% - 200px);
+}
+
+#testimonial .testimonialInfo .testiContent p {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: justify;
+    color: #4bcaff;
+}
+
+#testimonial .testimonialInfo .testiContent p.author {
+    font-style: italic;
+    text-align: right;
+    margin-top: 5px;
+}
+
+#testimonial .testimonialInfo .testiContent p.author span {
+    display: block;
+}
+
+/* /Testimonial Section CSS End */
+
+/* Download Section CSS Start */
+#download {
+    background-color: #414042;
+    padding: 30px 0;
+}
+
+#download .downloadInfo {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#download .downloadInfo h2 {
+    font-size: 55px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+#download .downloadInfo a {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    color: #414042;
+    padding: 20px 35px;
+    background-color: #4bcaff;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 3px 0 0 #447084;
+    box-shadow: 0 3px 0 0 #447084;
+}
+
+/* /Download Section CSS End */
 
 /* Contact Section CSS Start */
 #contact {
@@ -236,8 +554,8 @@ a {
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     background-color: rgb(75, 202, 255, 0.8);
     padding: 30px;
     text-align: center;
@@ -277,23 +595,27 @@ a {
     background-color: #414042;
     color: #4bcaff;
     -webkit-box-shadow: 0 3px 0 0 #313032;
-            box-shadow: 0 3px 0 0 #313032;
+    box-shadow: 0 3px 0 0 #313032;
     cursor: pointer;
 }
 
 /* /Contact Section CSS End */
 
-/* Banner Section CSS Start */
-/* /Banner Section CSS End */
-/* Banner Section CSS Start */
-/* /Banner Section CSS End */
-/* Banner Section CSS Start */
-/* /Banner Section CSS End */
-/* Banner Section CSS Start */
-/* /Banner Section CSS End */
-/* Banner Section CSS Start */
-/* /Banner Section CSS End */
-/* Banner Section CSS Start */
-/* /Banner Section CSS End */
-/* Banner Section CSS Start */
-/* /Banner Section CSS End */
+/* Footer Section CSS Start */
+#footer {
+    background-color: #414042;
+    padding: 48px 0;
+    font-size: 12px;
+    color: #fefefe40;
+}
+
+#footer .leftBox {
+    width: 50%;
+}
+
+#footer .rightBox {
+    width: 50%;
+    text-align: right;
+}
+
+/* /Footer Section CSS End */
