@@ -1,621 +1,643 @@
 * {
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 a {
-    text-decoration: none;
-    display: block;
+  text-decoration: none;
+  display: block;
 }
 
 /* Default CSS Start */
 .container {
-    width: 1170px;
-    margin: 0 auto;
+  width: 1170px;
+  margin: 0 auto;
 }
 
 .row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: safe;
-    -ms-flex-pack: safe;
-    justify-content: safe;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: safe;
+  -ms-flex-pack: safe;
+  justify-content: safe;
 }
 
 .secInfo {
-    text-align: center;
-    width: 100%;
+  text-align: center;
+  width: 100%;
 }
 
 .secInfo h2 {
-    font-size: 36px;
-    font-weight: 900;
-    color: #414042;
-    text-transform: lowercase;
+  font-size: 36px;
+  font-weight: 900;
+  color: #414042;
+  text-transform: lowercase;
 }
 
 .secInfo p {
-    font-size: 20px;
-    font-weight: 300;
-    color: #414042;
+  font-size: 20px;
+  font-weight: 300;
+  color: #414042;
 }
 
 /* Default CSS End */
 
 /* Nav Section CSS Start */
 #nav {
-    background-color: #131e29;
-    border-bottom: 2px solid #182738;
-    position: fixed;
-    width: 100%;
-    z-index: 99;
+  background-color: #131e29;
+  border-bottom: 2px solid #182738;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
 }
 
 #nav .logo {
-    width: 300px;
+  width: 300px;
 }
 
 #nav .logo a {
-    display: inline-block;
-    padding: 21px 0;
+  display: inline-block;
+  padding: 21px 0;
 }
 
 #nav .menu {
-    width: calc(100% - 300px);
+  width: calc(100% - 300px);
 }
 
 #nav .menu ul {
-    float: right;
+  float: right;
 }
 
 #nav .menu ul li {
-    display: inline-block;
+  display: inline-block;
 }
 
 #nav .menu ul li a {
-    display: block;
-    font-size: 13px;
-    font-weight: 700;
-    color: #fff;
-    text-transform: uppercase;
-    padding: 41px 18px;
-    -o-transition: linear .3s;
-    transition: linear .3s;
-    -webkit-transition: linear .3s;
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 41px 18px;
+  -o-transition: linear 0.3s;
+  transition: linear 0.3s;
+  -webkit-transition: linear 0.3s;
 }
 
 #nav .menu ul li:hover a {
-    color: #4bcaff;
+  color: #4bcaff;
 }
 
 /* /Nav Section CSS End */
 
 /* Banner Section CSS Start */
 #banner {
-    background-image: url('../images/bannerBg.jpg');
-    background-size: cover;
-    background-position: center;
-    border-bottom: 4px solid #4bcaff;
-    position: relative;
+  background-image: url("../images/bannerBg.jpg");
+  background-size: cover;
+  background-position: center;
+  border-bottom: 4px solid #4bcaff;
+  position: relative;
 }
 
 #banner .bannerImg {
-    width: 40%;
-    position: absolute;
-    left: 0;
-    bottom: 0;
+  width: 40%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 #banner .bannerImg img {
-    width: 100%;
-    display: block;
+  width: 100%;
+  display: block;
 }
 
 #banner .bannerContent {
-    width: 60%;
-    margin-left: auto;
-    padding: 245px 0 115px 30px;
+  width: 60%;
+  margin-left: auto;
+  padding: 245px 0 115px 30px;
 }
 
 #banner .bannerContent h2 {
-    font-size: 48px;
-    font-weight: 300;
-    color: #fff;
-    margin-bottom: 30px;
+  font-size: 48px;
+  font-weight: 300;
+  color: #fff;
+  margin-bottom: 30px;
 }
 
 #banner .bannerContent h2 span {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 #banner .bannerContent p {
-    font-size: 18px;
-    font-weight: 300;
-    color: #fff;
-    text-align: justify;
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+  text-align: justify;
 }
 
 #banner .bannerContent .bannerBtn {
-    margin: 45px 0;
+  margin: 45px 0;
 }
 
 #banner .bannerContent .bannerBtn a {
-    display: inline-block;
-    font-size: 15px;
-    font-weight: 700;
-    color: #fff;
-    padding: 23px 50px;
-    border: 2px solid #fff;
-    border-radius: 10px;
-    margin-right: 39px;
-    -o-transition: all linear .3s;
-    transition: all linear .3s;
-    -webkit-transition: all linear .3s;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  padding: 23px 50px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  margin-right: 39px;
+  -o-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
 }
 
 #banner .bannerContent .bannerBtn a:hover {
-    border: none;
-    background-color: #4bcaff;
-    border: 2px solid #4bcaff;
-    -webkit-box-shadow: 0px 3px 0px 0px rgba(39, 118, 151, 1);
-    box-shadow: 0px 3px 0px 0px rgba(39, 118, 151, 1);
+  border: none;
+  background-color: #4bcaff;
+  border: 2px solid #4bcaff;
+  -webkit-box-shadow: 0px 3px 0px 0px rgba(39, 118, 151, 1);
+  box-shadow: 0px 3px 0px 0px rgba(39, 118, 151, 1);
 }
 
 #banner .bannerContent .appBtn p {
-    display: inline-block;
-    font-size: 18px;
-    font-weight: 300;
-    color: #fff;
-    margin-right: 10px;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+  margin-right: 10px;
 }
 
 #banner .bannerContent .appBtn a {
-    display: inline-block;
-    width: 60px;
-    height: 60px;
-    font-size: 25px;
-    text-align: center;
-    line-height: 60px;
-    color: #4bcaff;
-    border-radius: 50%;
-    background-color: #191c22;
-    margin-right: 15px;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  font-size: 25px;
+  text-align: center;
+  line-height: 60px;
+  color: #4bcaff;
+  border-radius: 50%;
+  background-color: #191c22;
+  margin-right: 15px;
 }
 
 /* /Banner Section CSS End */
 
-
 /* Feature Section CSS Start */
 #feature {
-    padding: 45px 0;
-    background-color: #f9f9f9;
+  padding: 45px 0;
+  background-color: #f9f9f9;
 }
 
 #feature .featureItem {
-    width: 25%;
-    text-align: center;
-    padding: 0 25px;
-    margin: 70px 0 50px;
+  width: 25%;
+  text-align: center;
+  padding: 0 25px;
+  margin: 70px 0 50px;
 }
 
 #feature .featureItem span {
-    display: inline-block;
-    width: 165px;
-    height: 165px;
-    border-radius: 50%;
-    background-color: #4bcaff;
-    -webkit-box-shadow: 0 4px 0 0 #efefef;
-    box-shadow: 0 4px 0 0 #efefef;
+  display: inline-block;
+  width: 165px;
+  height: 165px;
+  border-radius: 50%;
+  background-color: #4bcaff;
+  -webkit-box-shadow: 0 4px 0 0 #efefef;
+  box-shadow: 0 4px 0 0 #efefef;
 }
 
 #feature .featureItem span i {
-    color: #fff;
-    font-size: 70px;
-    line-height: 165px;
+  color: #fff;
+  font-size: 70px;
+  line-height: 165px;
 }
 
 #feature .featureItem h3 {
-    color: #414042;
-    font-size: 15px;
-    font-weight: 700;
-    margin: 30px 0;
+  color: #414042;
+  font-size: 15px;
+  font-weight: 700;
+  margin: 30px 0;
 }
 
 /* /Feature Section CSS End */
 
 /* Gallery Section CSS Start */
 #gallery {
-    padding: 45px 0;
+  padding: 45px 0;
 }
 
 #gallery .galleryItem {
-    width: calc(25% - 30px);
-    margin: 65px 15px 50px;
-    text-align: center;
+  width: calc(25% - 30px);
+  margin: 65px 15px 50px;
+  text-align: center;
 }
 
 #gallery .galleryItem .productThumb {
-    border-radius: 15px;
-    margin-bottom: 25px;
-    overflow: hidden;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  overflow: hidden;
 }
 
 #gallery .galleryItem .productThumb .productImg {
-    width: 100%;
-    height: 300px;
-    border: 1px solid #4bcaff;
-    border-radius: 15px 15px 0 0;
-    overflow: hidden;
+  width: 100%;
+  height: 300px;
+  border: 1px solid #4bcaff;
+  border-radius: 15px 15px 0 0;
+  overflow: hidden;
 }
 
 #gallery .galleryItem .productThumb .productImg img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: scale-down;
-    object-fit: scale-down;
-    -webkit-transition: linear .3s;
-    -o-transition: linear .3s;
-    transition: linear .3s;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: scale-down;
+  object-fit: scale-down;
+  -webkit-transition: linear 0.3s;
+  -o-transition: linear 0.3s;
+  transition: linear 0.3s;
 }
 
 #gallery .galleryItem:hover .productThumb .productImg img {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 #gallery .galleryItem .productThumb h3 {
-    font-size: 15px;
-    font-weight: 700;
-    color: #4bcaff;
-    background-color: #447084;
-    padding: 15px 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: #4bcaff;
+  background-color: #447084;
+  padding: 15px 0;
 }
 
 #gallery .galleryItem .productDes {
-    padding: 0 25px;
+  padding: 0 25px;
 }
 
 #gallery .galleryItem .productDes p {
-    font-size: 13px;
-    line-height: 22px;
-    color: #838383;
+  font-size: 13px;
+  line-height: 22px;
+  color: #838383;
 }
 
 /* /Gallery Section CSS End */
 
 /* Video Section CSS Start */
 #video {
-    background-image: url('../images/texture-1.jpg');
-    padding: 80px 0;
+  background-image: url("../images/texture-1.jpg");
+  padding: 80px 0;
 }
 
 #video .title {
-    width: 67%;
-    margin: 0 auto;
+  width: 67%;
+  margin: 0 auto;
 }
 
 #video .title h2 {
-    font-size: 48px;
-    font-weight: 300;
-    color: #fff;
-    text-align: center;
-    margin-bottom: 45px;
+  font-size: 48px;
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 45px;
 }
 
 #video .title h2 span {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 #video .videoInfo {
-    width: 50%;
-    margin: 0 auto;
+  width: 50%;
+  margin: 0 auto;
 }
 
 #video .videoInfo p {
-    font-size: 18px;
-    color: #fff;
-    text-align: justify;
-    margin-bottom: 30px;
+  font-size: 18px;
+  color: #fff;
+  text-align: justify;
+  margin-bottom: 30px;
 }
 
 /* /Video Section CSS End */
 
 /* Price Section CSS Start */
 #price {
-    margin: 70px 0;
+  margin: 70px 0;
 }
 
 #price .priceTable {
-    width: 90%;
-    margin: 0 auto;
+  width: 90%;
+  margin: 0 auto;
 }
 
 #price .priceTable .row {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 #price .priceTable .priceBox {
-    width: calc(30% - 30px);
-    height: 100%;
-    margin: 80px 15px 0;
-    text-align: center;
-    background-color: #f9f9f9;
-    border: 1px solid #dad7d7;
-    border-radius: 10px;
-    color: #d7d7d7;
+  width: calc(30% - 30px);
+  height: 100%;
+  margin: 80px 15px 0;
+  text-align: center;
+  background-color: #f9f9f9;
+  border: 1px solid #dad7d7;
+  border-radius: 10px;
+  color: #d7d7d7;
 }
 
 #price .priceTable .priceBox.highlight {
-    width: calc(40% - 30px)
+  width: calc(40% - 30px);
 }
 
 #price .priceTable .priceBox h3 {
-    font-size: 17px;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin: 25px;
-    padding: 0 10px;
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 25px;
+  padding: 0 10px;
 }
 
 #price .priceTable .priceBox.highlight h3 {
-    font-size: 22px;
-    margin: 25px;
-    padding: 0 10px;
+  font-size: 22px;
+  margin: 25px;
+  padding: 0 10px;
 }
 
 #price .priceTable .priceBox p {
-    font-size: 85px;
-    font-weight: 700;
-    color: #fff;
-    margin: 20px 0;
-    padding: 0 10px;
+  font-size: 85px;
+  font-weight: 700;
+  color: #fff;
+  margin: 20px 0;
+  padding: 0 10px;
 }
 
 #price .priceTable .priceBox:nth-of-type(3n - 2) p {
-    background-color: #91c46b;
+  background-color: #91c46b;
 }
 
 #price .priceTable .priceBox:nth-of-type(3n - 1) p {
-    background-color: #4bcaff;
+  background-color: #4bcaff;
 }
 
 #price .priceTable .priceBox:nth-of-type(3n) p {
-    background-color: #fd7c00;
+  background-color: #fd7c00;
 }
 
 #price .priceTable .priceBox p span {
-    font-size: 80px;
+  font-size: 80px;
 }
 
 #price .priceTable .priceBox ul li {
-    font-size: 18px;
-    font-weight: 700;
-    margin: 24px 0;
-    padding: 0 10px;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 24px 0;
+  padding: 0 10px;
 }
 
 #price .priceTable .priceBox a {
-    display: inline-block;
-    font-size: 15px;
-    font-weight: 700;
-    color: #fff;
-    margin: 20px 0;
-    padding: 20px 45px;
-    border-radius: 10px;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  margin: 20px 0;
+  padding: 20px 45px;
+  border-radius: 10px;
 }
 
 #price .priceTable .priceBox.highlight a {
-    padding: 25px 45px;
+  padding: 25px 45px;
 }
 
 #price .priceTable .priceBox:nth-of-type(3n - 2) a {
-    background-color: #91c46b;
+  background-color: #91c46b;
 }
 
 #price .priceTable .priceBox:nth-of-type(3n - 1) a {
-    background-color: #4bcaff;
+  background-color: #4bcaff;
 }
 
 #price .priceTable .priceBox:nth-of-type(3n) a {
-    background-color: #fd7c00;
+  background-color: #fd7c00;
 }
 
 /* /Price Section CSS End */
 
 /* Testimonial Section CSS Start */
 #testimonial {
-    padding: 40px 0;
-    border: 1px solid #dad7d7;
+  padding: 40px 0;
+  border: 1px solid #dad7d7;
 }
 
 #testimonial .testimonialInfo {
-    width: 50%;
-    margin: 0 auto;
+  width: 50%;
+  margin: 0 auto;
 }
 
 #testimonial .testimonialInfo h2 {
-    font-size: 36px;
-    font-weight: 900;
-    color: #414042;
-    text-align: center;
+  font-size: 36px;
+  font-weight: 900;
+  color: #414042;
+  text-align: center;
 }
 
 #testimonial .testimonialInfo .row {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 #testimonial .testimonialInfo .testiIcon {
-    width: 200px;
-    margin: 40px 0 60px;
+  width: 200px;
+  margin: 40px 0 60px;
 }
 
 #testimonial .testimonialInfo .testiContent {
-    width: calc(100% - 200px);
+  width: calc(100% - 200px);
 }
 
 #testimonial .testimonialInfo .testiContent p {
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 18px;
-    text-align: justify;
-    color: #4bcaff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: justify;
+  color: #4bcaff;
 }
 
 #testimonial .testimonialInfo .testiContent p.author {
-    font-style: italic;
-    text-align: right;
-    margin-top: 5px;
+  font-style: italic;
+  text-align: right;
+  margin-top: 5px;
 }
 
 #testimonial .testimonialInfo .testiContent p.author span {
-    display: block;
+  display: block;
 }
 
 /* /Testimonial Section CSS End */
 
 /* Download Section CSS Start */
 #download {
-    background-color: #414042;
-    padding: 30px 0;
+  background-color: #414042;
+  padding: 30px 0;
 }
 
 #download .downloadInfo {
-    width: 50%;
-    margin: 0 auto;
-    text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 #download .downloadInfo h2 {
-    font-size: 55px;
-    font-weight: 700;
-    color: #fff;
-    margin-bottom: 25px;
+  font-size: 55px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 25px;
 }
 
 #download .downloadInfo a {
-    display: inline-block;
-    font-size: 15px;
-    font-weight: 700;
-    color: #414042;
-    padding: 20px 35px;
-    background-color: #4bcaff;
-    border-radius: 10px;
-    -webkit-box-shadow: 0 3px 0 0 #447084;
-    box-shadow: 0 3px 0 0 #447084;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 700;
+  color: #414042;
+  padding: 20px 35px;
+  background-color: #4bcaff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 3px 0 0 #447084;
+  box-shadow: 0 3px 0 0 #447084;
 }
 
 /* /Download Section CSS End */
 
 /* Contact Section CSS Start */
 #contact {
-    position: relative;
-    width: 100%;
-    height: 685px;
+  position: relative;
+  width: 100%;
+  height: 685px;
 }
 
 #contact .map {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 #contact .map iframe {
-    border: none;
-    width: 100%;
-    height: 100%;
-    display: block;
+  border: none;
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 #contact .contactForm {
-    position: absolute;
-    margin: auto;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    background-color: rgb(75, 202, 255, 0.8);
-    padding: 30px;
-    text-align: center;
-    font-family: 'Lato', sans-serif;
-    width: 25%;
-    border-radius: 10px;
+  position: absolute;
+  margin: auto;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: rgb(75, 202, 255, 0.8);
+  padding: 30px;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  width: 25%;
+  border-radius: 10px;
 }
 
 #contact .contactForm h2 {
-    font-size: 36px;
-    font-weight: 700;
-    color: #fff;
-    margin-bottom: 30px;
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 30px;
 }
 
 #contact .contactForm form input,
 #contact .contactForm form textarea {
-    display: block;
-    width: 100%;
-    font-size: 14px;
-    background-color: #fff;
-    padding: 12px;
-    border-radius: 10px;
-    border: none;
-    margin-bottom: 15px;
-    text-align: center;
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  background-color: #fff;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 15px;
+  text-align: center;
 }
 
 #contact .contactForm form textarea {
-    height: 150px;
-    resize: none;
+  height: 150px;
+  resize: none;
 }
 
 #contact .contactForm form input[type="submit"] {
-    display: inline-block;
-    width: 80%;
-    background-color: #414042;
-    color: #4bcaff;
-    -webkit-box-shadow: 0 3px 0 0 #313032;
-    box-shadow: 0 3px 0 0 #313032;
-    cursor: pointer;
+  display: inline-block;
+  width: 80%;
+  background-color: #414042;
+  color: #4bcaff;
+  -webkit-box-shadow: 0 3px 0 0 #313032;
+  box-shadow: 0 3px 0 0 #313032;
+  cursor: pointer;
 }
 
 /* /Contact Section CSS End */
 
 /* Footer Section CSS Start */
 #footer {
-    background-color: #414042;
-    padding: 48px 0;
-    font-size: 12px;
-    color: #fefefe40;
+  background-color: #414042;
+  padding: 48px 0;
+  font-size: 12px;
 }
 
 #footer .leftBox {
-    width: 50%;
+  width: 50%;
+  color: #fefefe40;
 }
 
 #footer .rightBox {
-    width: 50%;
-    text-align: right;
+  width: 50%;
+  text-align: right;
+}
+#footer .rightBox a {
+  display: inline-block;
+  color: #fefefe40;
+  position: relative;
+  -o-transition: linear 0.3s;
+  transition: linear 0.3s;
+  -webkit-transition: linear 0.3s;
+  margin-right: 10px;
+}
+#footer .rightBox a:last-child {
+  margin-right: 0px;
+}
+#footer .rightBox a:hover {
+  color: #4bcaff;
+}
+#footer .rightBox a:after {
+  position: absolute;
+  content: "|";
+  padding: 0 5px;
+}
+#footer .rightBox a:last-child:after {
+  content: "";
 }
 
 /* /Footer Section CSS End */
